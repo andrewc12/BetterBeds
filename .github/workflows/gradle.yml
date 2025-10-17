@@ -53,7 +53,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Package
-        path: build/libs
+        path: |
+              fabric/build/libs/
+              neoforge/build/libs/
 
   dependency-submission:
 

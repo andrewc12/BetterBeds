@@ -7,8 +7,7 @@
 
 name: Java CI with Gradle
 
-on:
-
+on: push
 
 jobs:
   build:

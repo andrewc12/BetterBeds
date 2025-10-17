@@ -20,8 +20,9 @@ configurations {
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
     developmentFabric.extendsFrom common
-    archivesBaseName = rootProject.archives_base_name + "-fabric"
 }
+
+archivesBaseName = rootProject.archives_base_name + "-fabric"
 
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"

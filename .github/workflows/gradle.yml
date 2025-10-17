@@ -32,7 +32,7 @@ jobs:
          gradle-version: '8.8'
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew build
+      run: ./gradlew dependencyUpdate
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4

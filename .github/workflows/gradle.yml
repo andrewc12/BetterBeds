@@ -60,16 +60,7 @@ jobs:
 
     - name: List all folders
       id: list_folders
-      run: |
-        echo "Listing all folders in the repository:"
-        find . -type d -print0 | xargs -0 -n 1 echo >> folders.txt
-        echo "folders_list=$(cat folders.txt)" >> "$GITHUB_OUTPUT"
-
-    - name: Output the list of folders
-      run: |
-        echo "The following folders were found:"
-        cat folders.txt
-        echo "Accessing output variable: ${{ steps.list_folders.outputs.folders_list }}"
+      run: tree
 
   dependency-submission:
 
